@@ -1,7 +1,7 @@
-sudo: false
+os: linux
+dist: precise
 language: android
 jdk: oraclejdk7
-dist: precise
 
 android:
     components:
@@ -14,5 +14,6 @@ android:
     licenses:
         - android-sdk-license-5be876d5
         - android-sdk-license-c81a61d9
+        - android-sdk-license-e6a904e8
 script:
     - make test
