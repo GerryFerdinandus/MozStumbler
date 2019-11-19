@@ -1,7 +1,6 @@
 os: linux
-dist: precise
+dist: trusty
 language: android
-jdk: oraclejdk7
 
 android:
     components:
