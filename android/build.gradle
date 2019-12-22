@@ -88,7 +88,7 @@ android {
         flavorDimensions "appstore"
 
         github {
-            flavorDimension "appstore"
+            dimension "appstore"
 
             buildConfigField "String", "MOZILLA_API_KEY", getMozillaApiKey('github')
             buildConfigField "String", "TILE_SERVER_URL", getTileServerUrl('github')
@@ -96,7 +96,7 @@ android {
         }
 
         playstore {
-            flavorDimension "appstore"
+            dimension "appstore"
 
             buildConfigField "String", "MOZILLA_API_KEY", getMozillaApiKey('playstore')
             buildConfigField "String", "TILE_SERVER_URL", getTileServerUrl('playstore')
@@ -104,7 +104,7 @@ android {
         }
 
         fdroid {
-            flavorDimension "appstore"
+            dimension "appstore"
 
             buildConfigField "String", "MOZILLA_API_KEY", getMozillaApiKey('fdroid')
             buildConfigField "String", "TILE_SERVER_URL", getTileServerUrl('fdroid')
