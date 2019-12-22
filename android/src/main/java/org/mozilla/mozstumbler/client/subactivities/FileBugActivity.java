@@ -5,7 +5,7 @@
 package org.mozilla.mozstumbler.client.subactivities;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -16,7 +16,7 @@ import android.widget.Toast;
 import org.acra.ACRA;
 import org.mozilla.mozstumbler.R;
 
-public class FileBugActivity extends ActionBarActivity {
+public class FileBugActivity extends AppCompatActivity {
 
     private static final String SENDER_NAME = "Sender Name";
     private static final String SENDER_EMAIL = "Sender Email";

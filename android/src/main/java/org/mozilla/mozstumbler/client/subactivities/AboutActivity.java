@@ -5,7 +5,7 @@
 package org.mozilla.mozstumbler.client.subactivities;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.widget.TextView;
 
@@ -13,7 +13,7 @@ import org.mozilla.mozstumbler.BuildConfig;
 import org.mozilla.mozstumbler.R;
 import org.mozilla.mozstumbler.client.PackageUtils;
 
-public class AboutActivity extends ActionBarActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

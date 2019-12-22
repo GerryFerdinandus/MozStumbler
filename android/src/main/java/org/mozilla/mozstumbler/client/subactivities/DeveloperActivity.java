@@ -11,7 +11,7 @@ import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +44,7 @@ import java.util.HashMap;
 
 import static org.mozilla.mozstumbler.client.ClientDataStorageManager.sdcardArchivePath;
 
-public class DeveloperActivity extends ActionBarActivity {
+public class DeveloperActivity extends AppCompatActivity {
 
     private final String LOG_TAG = LoggerUtil.makeLogTag(DeveloperActivity.class);
 

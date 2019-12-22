@@ -14,6 +14,7 @@ buildscript {
     repositories {
         jcenter()
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        maven { url 'https://maven.google.com'}
     }
 
     dependencies {
@@ -26,6 +27,7 @@ apply plugin: 'com.android.application'
 repositories {
     jcenter()
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'https://maven.google.com'}
     mavenLocal()
 }
 
@@ -212,8 +214,8 @@ dependencies {
     // libraries, because they support a wide range of Android versions and
     // provide APIs for recommended user interface patterns.
 
-    compile "com.android.support:support-v4:23.0.0"
-    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile "com.android.support:support-v4:28.0.0"
+    compile 'com.android.support:appcompat-v7:28.0.0'
 
     compile('org.simpleframework:simple-xml:2.7.1') {
         exclude group: 'stax', module: 'stax-api'

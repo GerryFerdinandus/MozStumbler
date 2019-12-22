@@ -13,7 +13,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.util.AttributeSet;
 import android.view.Menu;
@@ -33,7 +33,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class LogActivity extends ActionBarActivity {
+public class LogActivity extends AppCompatActivity {
     private static final int MAX_SIZE = 200;
     static ConsoleView sConsoleView;
     private static String LOG_TAG = LoggerUtil.makeLogTag(LogActivity.class);

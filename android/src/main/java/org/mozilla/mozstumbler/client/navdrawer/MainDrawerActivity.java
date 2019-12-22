@@ -21,7 +21,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,7 +47,7 @@ import org.mozilla.mozstumbler.svclocator.services.log.LoggerUtil;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainDrawerActivity
-        extends ActionBarActivity
+        extends AppCompatActivity
         implements IMainActivity,
                    ActivityCompat.OnRequestPermissionsResultCallback
 {
