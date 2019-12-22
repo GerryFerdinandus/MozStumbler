@@ -64,7 +64,15 @@ public class GlobalConstants {
                     };
         }
 
-        if (Build.VERSION.SDK_INT >= 16) {
+
+        if (Build.VERSION.SDK_INT >= 29) {
+            DEFAULT_PROTOCOLS = new String[]
+                    {
+                            "TLSv1.3",
+                            "TLSv1.2",
+                            "TLSv1.1",
+                    };
+        } else if (Build.VERSION.SDK_INT >= 16) {
             DEFAULT_PROTOCOLS = new String[]
                     {
                             "TLSv1.2",
