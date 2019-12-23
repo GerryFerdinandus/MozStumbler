@@ -1,19 +1,20 @@
-empty_properties:
-	touch android/properties/private-github.properties
-	touch android/properties/private-playstore.properties
+copy_properties:
+	@if [ ! -f android/properties/private-github.properties ]; then\
+		cp android/properties/private-fdroid.properties android/properties/private-github.properties;\
+		touch android/properties/private-playstore.properties;\
+	fi
 
-test: libtest unittest empty_properties
-	echo test is run
+test: libtest unittest copy_properties
 	./gradlew copyTestResources
 	./gradlew testGithubUnittest --info
 
-libtest: empty_properties
+libtest: copy_properties
 	cd libraries/stumbler; ./gradlew test
 
-unittest: empty_properties
+unittest: copy_properties
 	./gradlew assembleGithubUnittest
 
-debug: empty_properties
+debug: copy_properties
 	./gradlew assembleGithubDebug
 
 github:
@@ -30,10 +31,10 @@ fdroid:
 	./gradlew assembleFdroidRelease
 	sh rename_release.sh fdroid-release
 
-clean: empty_properties
+clean: copy_properties
 	rm -rf outputs
 	rm -rf libraries/stumbler/build
 	./gradlew clean
 
-install_debug: empty_properties
+install_debug: copy_properties
 	./gradlew installGithubDebug
